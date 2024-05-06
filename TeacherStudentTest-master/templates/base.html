@@ -14,7 +14,7 @@
         <a class="nav-link" data-target="home" href="{% url 'home' %}">Главная</a>
         {% if user.is_authenticated %}
             <span class="user-info">Аккаунт: {{ user.fio }}
-            <span style="color: blue">
+            <span style="color: pink">
                 ({% if user.role == user.TEACHER %}
                     учитель
                 {% elif user.role == user.STUDENT %}
